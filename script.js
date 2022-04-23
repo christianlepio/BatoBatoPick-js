@@ -1,5 +1,10 @@
 let humanScore = 0, botScore = 0
 
+const SoundWin = new Audio('bgmusic/win.wav');
+const SoundLose = new Audio('bgmusic/lose.wav');
+const SoundDraw = new Audio('bgmusic/draw.wav');
+const SoundClick = new Audio('bgmusic/click.wav');
+
 function playlogic(userChoice){
     console.log(userChoice.id)
     var choice = ['bato', 'papel', 'gunting']
@@ -41,12 +46,18 @@ function playlogic(userChoice){
         }
     }console.log(result + "skor: " + humanScore + ", botSkor: " + botScore)
 
-    if(result == 'You Win!')
+    if(result == 'You Win!'){
         resultColor = 'green'
-    else if(result == 'Draw!')
+        SoundWin.play()
+    }
+    else if(result == 'Draw!'){
         resultColor = 'yellow'
-    else
+        SoundDraw.play()
+    }
+    else{
         resultColor  = 'red'
+        SoundLose.play()
+    }
 
     var humanPick, botPick
     humanPick = document.getElementById(humanChoice).src
@@ -80,6 +91,7 @@ function playlogic(userChoice){
 }
 
 function playAgain(){
+    SoundClick.play()
     document.getElementById('humanPick').remove()
     document.getElementById('botPick').remove()
     document.getElementById('text-res').remove()
@@ -109,6 +121,7 @@ function playAgain(){
 }
 
 function resetGame(){
+    SoundClick.play()
     document.getElementById('humanPick').remove()
     document.getElementById('botPick').remove()
     document.getElementById('text-res').remove()
