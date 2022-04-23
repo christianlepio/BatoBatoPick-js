@@ -7,9 +7,27 @@
     <title>Bato-Bato-Pick</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <p>hello world</p>
+<body class="bg-primary">
+    <div class="container">
+        <div class="row justify-content-center text-white">
+            <h1 class="text-white text-center mt-4">ROCK-PAPER-SCISSORS</h1>
+            <h5 class="text-white text-center mt-3">Scoreboard</h5>
+            <div class="col-3 text-center border rounded">
+                <p class="fs-6 fw-bold">Human:<br><span class="fs-1">0</span></p>
+            </div>
+            <div class="col-3 text-center border rounded">
+                <p class="fs-6 fw-bold">Bot:<br><span class="fs-1">0</span></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3 d-flex justify-content-center p-5"><img src="img/rock.png" alt=""></div>
+            <div class="col-3 d-flex justify-content-center p-5"><img src="img/paper.png" alt=""></div>
+            <div class="col-3 d-flex justify-content-center p-5"><img src="img/scissor.png" alt=""></div>
+            <h6 class="text-center text-white fs-6 mt-1">Make your move.</h6>
+        </div>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
