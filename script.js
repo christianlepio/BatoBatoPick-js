@@ -70,10 +70,12 @@ function playlogic(userChoice){
     var humanImage = document.createElement('img')
     humanImage.setAttribute('src' , humanPick)
     humanImage.setAttribute('id' , "humanPick")
+    humanImage.setAttribute('onclick' , "clickError()")
 
     var botImage = document.createElement('img')
     botImage.setAttribute('src' , botPick)
     botImage.setAttribute('id' , "botPick")
+    botImage.setAttribute('onclick' , "clickError()")
 
     var text = document.createElement('h1')
     text.setAttribute('style' , 'color:'+resultColor)
@@ -154,4 +156,8 @@ function resetGame(){
 
     document.getElementById("skor1").textContent = humanScore
     document.getElementById("skor2").textContent = botScore
+}
+
+function clickError(){
+
 }
