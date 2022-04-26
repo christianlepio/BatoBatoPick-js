@@ -4,6 +4,7 @@ const SoundWin = new Audio('bgmusic/win.wav');
 const SoundLose = new Audio('bgmusic/lose.wav');
 const SoundDraw = new Audio('bgmusic/draw.wav');
 const SoundClick = new Audio('bgmusic/click.wav');
+const SoundError = new Audio('bgmusic/error.wav');
 
 function playlogic(userChoice){
     console.log(userChoice.id)
@@ -159,5 +160,5 @@ function resetGame(){
 }
 
 function clickError(){
-
+    SoundClick.play()
 }
