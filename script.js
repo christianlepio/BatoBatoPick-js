@@ -160,5 +160,5 @@ function resetGame(){
 }
 
 function clickError(){
-    SoundClick.play()
+    SoundError.play()
 }
