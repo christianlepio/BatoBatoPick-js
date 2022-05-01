@@ -79,8 +79,9 @@ function playlogic(userChoice){
     botImage.setAttribute('onclick' , "clickError()")
 
     var text = document.createElement('h1')
+    text.setAttribute('style' , 'text-shadow: 0 0 0px white, 0 0 2px white;')
     text.setAttribute('style' , 'color:'+resultColor)
-    text.setAttribute('style' , 'text-shadow: 0 0 0px white, 0 0 2px white')
+
     text.setAttribute('id' , 'text-res')
     text.innerHTML = result
 
