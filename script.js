@@ -22,7 +22,7 @@ function playlogic(userChoice){
         }else if(botChoice ===  choice[0]){
             result = 'Draw!'
         }else{
-            result = 'You Win!'
+            result = 'YOU WIN!'
             humanScore += 1
         }
     }else if(humanChoice === choice[1]){
