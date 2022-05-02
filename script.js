@@ -17,7 +17,7 @@ function playlogic(userChoice){
 
     if(humanChoice === choice[0]){
         if(botChoice === choice[1]){
-            result = 'You Lose!'
+            result = 'YOU LOSE!'
             botScore += 1
         }else if(botChoice ===  choice[0]){
             result = 'Draw!'
@@ -27,7 +27,7 @@ function playlogic(userChoice){
         }
     }else if(humanChoice === choice[1]){
         if(botChoice === choice[2]){
-            result = 'You Lose!'
+            result = 'YOU LOSE!'
             botScore += 1
         }else if(botChoice === choice[1]){
             result = 'Draw!'
@@ -37,7 +37,7 @@ function playlogic(userChoice){
         }
     }else{
         if(botChoice === choice[0]){
-            result = 'You Lose!'
+            result = 'YOU LOSE!'
             botScore += 1
         }else if(botChoice === choice[2]){
             result = 'Draw!'
