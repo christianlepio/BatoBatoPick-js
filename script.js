@@ -32,7 +32,7 @@ function playlogic(userChoice){
         }else if(botChoice === choice[1]){
             result = 'DRAW!'
         }else{
-            result = 'You Win!'
+            result = 'YOU WIN!'
             humanScore += 1
         }
     }else{
@@ -42,12 +42,12 @@ function playlogic(userChoice){
         }else if(botChoice === choice[2]){
             result = 'DRAW!'
         }else{
-            result = 'You Win!'
+            result = 'YOU WIN!'
             humanScore += 1
         }
     }console.log(result + "skor: " + humanScore + ", botSkor: " + botScore)
 
-    if(result == 'You Win!'){
+    if(result == 'YOU WIN!'){
         resultColor = 'green'
         SoundWin.play()
     }
