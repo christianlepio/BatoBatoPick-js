@@ -20,7 +20,7 @@ function playlogic(userChoice){
             result = 'YOU LOSE!'
             botScore += 1
         }else if(botChoice ===  choice[0]){
-            result = 'Draw!'
+            result = 'DRAW!'
         }else{
             result = 'YOU WIN!'
             humanScore += 1
@@ -30,7 +30,7 @@ function playlogic(userChoice){
             result = 'YOU LOSE!'
             botScore += 1
         }else if(botChoice === choice[1]){
-            result = 'Draw!'
+            result = 'DRAW!'
         }else{
             result = 'You Win!'
             humanScore += 1
@@ -40,7 +40,7 @@ function playlogic(userChoice){
             result = 'YOU LOSE!'
             botScore += 1
         }else if(botChoice === choice[2]){
-            result = 'Draw!'
+            result = 'DRAW!'
         }else{
             result = 'You Win!'
             humanScore += 1
@@ -51,7 +51,7 @@ function playlogic(userChoice){
         resultColor = 'green'
         SoundWin.play()
     }
-    else if(result == 'Draw!'){
+    else if(result == 'DRAW!'){
         resultColor = 'yellow'
         SoundDraw.play()
     }
