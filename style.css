@@ -1,6 +1,6 @@
 img{
     height: 25vmin;
-    width: 25vmin;
+    width: 25vmin
 }
 img:hover{
     cursor: pointer;
